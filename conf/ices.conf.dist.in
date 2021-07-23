@@ -4,6 +4,8 @@
     <!-- This is the filename used as a playlist when using the builtin 
 	 playlist handler. -->
     <File>playlist.txt</File>
+    <!-- Set this to 0 to disable playlist looping-->
+    <Loop>1</Loop>
     <!-- Set this to 0 if you don't want to randomize your playlist, and to
 	 1 if you do. -->
     <Randomize>1</Randomize>

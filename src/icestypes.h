@@ -76,6 +76,7 @@ typedef struct {
 	int (*get_lineno)(void);
 	int (*reload)(void);
 	void (*shutdown)(void);
+    int loop;
 } playlist_module_t;
 
 /* -- input stream types -- */

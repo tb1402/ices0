@@ -5,6 +5,10 @@ Ices0 is a source client for broadcasting in MP3 format to an Icecast/Shoutcast 
 This is a fork of the [Icecast ices0 utility](http://www.icecast.org/ices.php),
 and has been carefully enhanced to be compatible with _CentovaCast_, _Airtime_, _AzuraCast_, _kPlaylist_ and others, as well as _standalone_.
 
+## What was changed in this fork
+
+* added a config option to disable playlist loop-play
+
 ## New features (over v0.4)
 
 This **version 0.4.11** features the following enhancements:
