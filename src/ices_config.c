@@ -254,6 +254,8 @@ static void parse_playlist_node(xmlDocPtr doc, xmlNsPtr ns, xmlNodePtr cur, ices
 
 		if (xmlstrcmp(cur->name, "Randomize") == 0)
 			ices_config->pm.randomize = atoi(ices_xml_read_node(doc, cur));
+		else if (xmlstrcmp(cur->name, "Loop") == 0)
+            ices_config->pm.loop = atoi(ices_xml_read_node(doc, cur));
 		else if (xmlstrcmp(cur->name, "Type") == 0) {
 			unsigned char *str = (unsigned char *)ices_xml_read_node(doc, cur);
 			if (str && (xmlstrcmp(str, "python") == 0))
