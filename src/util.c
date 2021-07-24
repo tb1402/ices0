@@ -108,7 +108,7 @@ int ices_util_valid_fd(int fd) {
 /* Return a dynamically allocated string, the next line read
  * from FILE *fp */
 char *ices_util_read_line(FILE *fp) {
-	char temp[1024];
+	char temp[2048];
 
 	if (!fp)
 		return NULL;
@@ -118,7 +118,7 @@ char *ices_util_read_line(FILE *fp) {
 
 		temp[0] = '\0';
 
-		if (!fgets(temp, 1024, fp)) {
+		if (!fgets(temp, 2048, fp)) {
 
 			if (!feof(fp)) {
 				ices_log_error("Got error while reading file, error: [%s]", ices_util_strerror(errno, temp, 1024));
