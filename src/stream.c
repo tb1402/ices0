@@ -83,6 +83,7 @@ void ices_stream_loop(ices_config_t* config) {
 
 	while (1) {
 		source.path = ices_playlist_get_next();
+        ices_log_debug("Got file name %s",soure.path);
 
 		if (!(source.path && source.path[0])) {
 			ices_log("Playlist handler returned an empty file name; no media to play, shutting down.");
